@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h2>Kalkulator Sederhana</h2>
+      <form id="calculator-form">
+        <label for="num1">Angka 1:</label>
+        <input type="number" id="num1" name="num1" required />
+
+        <label for="operator">Operator:</label>
+        <select id="operator" name="operator" required>
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+
+        <label for="num2">Angka 2:</label>
+        <input type="number" id="num2" name="num2" required />
+
+        <button type="button" onclick="calculate()">Hitung</button>
+      </form>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
+
+
+
